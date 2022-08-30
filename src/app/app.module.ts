@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
@@ -14,6 +13,10 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LayoutModule } from './layout/layout.module';
+import { PagesModule } from './pages/pages.module';
+import {HttpClientModule} from '@angular/common/http'
+
 
 @NgModule({
   declarations: [
@@ -27,12 +30,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     PortadaComponent,
     NavbarComponent,
     PortfolioComponent,
-    IniciarSesionComponent
+    IniciarSesionComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,30 +8,25 @@
   </head>
   <body class="p-3 m-0 border-0 bd-example">
 
-
-    
-  
-
 <div class="mb-3">
 
-               <div class="portada">
-                <a>
-                 <img class="portimg" src="../../assets/meme-spiderman.jpg"  alt="fotob" >  
-                 <div class="btn-edit" onclick="cambiar_parrafo()">
-                  <i class="fa fa-pen" > </i>              
-                </div>
-                </a>
+               <div class="portada">             
+                
+                 
+                 <div><img class="portimg" [src]="dataheader.persona.image_background_header"  alt="fotob" > <i class="fa fa-pen" ></i></div>
+                 <div class="btn-edit" onclick="cambiar_parrafo()"></div>
+                
                 </div>
               
     
-
+ 
         
         <div class="card">
 
           <div>
             <img class="perfil"  src="../../assets/Spider-Man-Serie-60 - copia.jpg" alt="fotoc" style="float: up;"> 
             <div class="position-absolute bottom-50 end-50 btn-edit" onclick="cambiar_parrafo()">
-              <i class="fa fa-pen" > </i>              
+                         
             </div>
                
               </div>
@@ -51,19 +46,19 @@
 
 <div class="card-body">
   
-          <h5 class="card-header">Joseph Cartaphilus</h5> 
+          <h5 class="card-header">  {{dataheader.persona.nombres}} <i class="fa fa-pen"> </i> </h5>
           <div class="btn-edit" onclick="cambiar_parrafo()">
-            <i class="fa fa-pen"> </i>       
+                  
           </div>
 </div>
           <div class="card-body">
-            <h5 class="card-title">Desarrollador Web Full Stack</h5>
-            <p class="card-text">Descripción</p>
+            <h5 class="card-title">{{dataheader.persona.ocupacion}}</h5>
+            <p class="card-text">{{dataheader.persona.sobre_mi}}</p>
             <a href="#" class="btn btn-primary">Button</a>
           </div>
         </div>
 
-     <button type="button" class="btn btn-primary" name="button">Tengo interés en...</button>  <button type="button" class="btn btn-primary" name="button">Botón 2</button>
+     <button type="button" class="btn btn-primary" name="button">btn</button><button type="button" class="btn btn-primary" name="button">Botón 2</button>
 
 
 

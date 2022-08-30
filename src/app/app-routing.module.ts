@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 
-const routes: Routes = [
+const routes : Routes = [
 {path:'portfolio',component :PortfolioComponent },
 {path:'iniciar-sesion', component: IniciarSesionComponent},
 {path: '', component: IniciarSesionComponent,pathMatch:'full'}
